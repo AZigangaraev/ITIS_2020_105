@@ -92,7 +92,9 @@ class ViewController: UIViewController, SignInViewDelegate, SignUpViewDelegate {
     @objc private func keyboardWillShow(_ notification: Notification) {
         guard
             let userInfo = notification.userInfo,
-            let size = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect
+            let size
+                = userInfo[UIResponder.keyboardFrameEndUserInfoKey]
+                as? CGRect
         else { return }
 
         for constraint in [ signInViewBottomConstraint, signUpViewBottomConstraint ] {
