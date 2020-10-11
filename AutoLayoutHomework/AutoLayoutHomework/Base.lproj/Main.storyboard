@@ -77,10 +77,10 @@
                                 <rect key="frame" x="98.5" y="397" width="23" height="19"/>
                                 <state key="normal" title="Button" image="repost_icon"/>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="I_giNoYFAAw" translatesAutoresizingMaskIntoConstraints="NO" id="oqE-no-eyc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="I_giNoYFAAw" translatesAutoresizingMaskIntoConstraints="NO" id="oqE-no-eyc">
                                 <rect key="frame" x="0.0" y="148" width="320" height="239"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="239" id="awW-4m-biU"/>
+                                    <constraint firstAttribute="height" constant="239" id="dQO-QD-cLF"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hVV-uq-MlB">
