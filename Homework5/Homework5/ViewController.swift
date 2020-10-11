@@ -9,12 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var avatarImageView: UIImageView!
-    @IBOutlet var postImageView: UIImageView!
-    @IBOutlet var usernameLabel: UILabel!
-    @IBOutlet var datePublishedLabel: UILabel!
-    @IBOutlet var likeButton: UIButton!
-    @IBOutlet var numberOfLikes: UILabel!
+    @IBOutlet private var avatarImageView: UIImageView!
+    @IBOutlet private var postImageView: UIImageView!
+    @IBOutlet private var usernameLabel: UILabel!
+    @IBOutlet private var datePublishedLabel: UILabel!
+    @IBOutlet private var likeButton: UIButton!
+    @IBOutlet private var numberOfLikes: UILabel!
     
     private var isLike: Bool = false
     private var countLikes = 824
@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         numberOfLikes.text = (String) (countLikes)
     }
     
-    @IBAction func likeButtonClicked(_ sender: Any) {
+    @IBAction private func likeButtonClicked(_ sender: Any) {
         if !isLike {
             countLikes += 1
             numberOfLikes.text = (String) (countLikes)
